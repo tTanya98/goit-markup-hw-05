@@ -98,7 +98,7 @@ img {
 .nav-list-link-special::after {
   content: '';
   position: absolute;
-  bottom: 0px;
+  bottom: -32px;
   left: 0px;
   display: block;
   width: 100%;
@@ -558,6 +558,36 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.filter-works-item:hover .overlay-filter-works{
+  transform: translateY(0);
+}
+.works-portfolio{
+  position: relative;
+  overflow: hidden;
+}
+.overlay-filter-works{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-filter-works-text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
 .filter-works-title {
   font-size: 18px;
   line-height: 2;
